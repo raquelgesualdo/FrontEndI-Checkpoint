@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./img/icon.JPG">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/cards.css"/>
+    <link rel="stylesheet" href="./css/motos.css">
+    <title>Reserva | LocaMoto</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="page__header">
+      <!-- Menu -->
+      <a class="page__header-logo" href="./index.html">
+        <img src="./img/locamoto-logo.JPG" alt="Logo"/></a>
+      <nav class="page__header-navbar">
+        <ul class="page__header-navbar-list">
+          <li><a href="./frota.html" title="Frota">Frota</a></li>
+          <li><a href="./planos.html" title="Planos">Planos</a></li>
+          <li><a href="./noticias.html" title="Notícias">Notícias</a></li>
+          <li><a href="./contato.html" title="Contato">Contato</a></li>
+          <li><a href="./login.html" title="Login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+    <section class="page__discover-reserve">
+        <h4 class="page__discover-reserve-title">Reservas</h4>
+        <h3 class="page__discover-reserve-options">Escolha sua moto agora mesmo!</h3>        
+    </section>
+    <!-- Login -->
+  <!-- fieldset container -->
+  <div class="container-reserve">
+    <fieldset id="fset-container">
+      <label for="nome">Nome:</label>
+      <input class="hvr" type="text" id="nome" nome="nome" placeholder="   nome completo">
+      <label for="email">E-mail:</label>
+      <input class="hvr" type="email" id="email" nome="email" placeholder="   contato@email.com">
+      <label for="telefone">Telefone:</label>
+      <input class="hvr" type="telefone" id="telefone" nome="telefone" placeholder="  (xx) xxxxx-xxxx">
+      <div class="data">
+        <label>Escolha uma data:</label>
+        <input type="date" name="data" value="2021-10-04" min="2021-10-04" max="2022-12-31">
+      </div>
+      <div class="motos">
+        <select name="motos" id="motos">
+          <option value="">Selecione uma moto</option>
+          <optgroup label="BMW">
+            <option value="R18 Classic">R18 Classic</option>
+            <option value="K1600 B">K1600 B</option>
+            <option value="R1250 GS">R1250 GS</option>
+            </optgroup>
+          <optgroup label="Harley-Davidson">
+            <option value="Street Glide">Street Glide</option>
+            <option value="Softail Classic">Softail Classic</option>
+            <option value="Ultra">Ultra</option>
+          </optgroup>
+      </select>
+      </div>
+      <div class="pagamento">
+        <label>Forma de Pagamento:</label>
+        <input type="radio" name="unico" value="debito"><label for="debito">Débito</label>
+        <input type="radio" name="unico" value="credito"><label for="credito">Crédito</label>
+      </div>
+      <button class="btn-submit" type="submit">Reservar !!!</button>
+      <button class="btn-reset" type="reset">Desistir :(</button>
+  </div>
+</fieldset>
+  </main>
+        <!-- Footer -->
+    <footer>
+        <p>Informações fictícias com links para alguns sites, utilizados unicamente para treinamento e desenvolvimento de Front End - Certified Tech Developer.</p>
+        <p>2021 – LocaMoto Locação de Veículos Ltda</p>
+    </footer>
+  </body>
+</html>

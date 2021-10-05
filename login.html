@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./img/icon.JPG">
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/cards.css"/>
+    <link rel="stylesheet" href="./css/motos.css">
+    <title>Login | LocaMoto</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="page__header">
+      <!-- Menu -->
+      <a class="page__header-logo" href="./index.html">
+        <img src="./img/locamoto-logo.JPG" alt="Logo"/></a>
+      <nav class="page__header-navbar">
+        <ul class="page__header-navbar-list">
+          <li><a href="./frota.html" title="Frota">Frota</a></li>
+          <li><a href="./planos.html" title="Planos">Planos</a></li>
+          <li><a href="./noticias.html" title="Notícias">Notícias</a></li>
+          <li><a href="./contato.html" title="Contato">Contato</a></li>
+          <li><a href="./login.html" title="Login">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+    <section class="page__discover-login">
+        <h4 class="page__discover-login-title">Login</h4>
+        <h3 class="page__discover-login-options">Entre na plataforma!</h3>        
+    </section>
+    <!-- Login -->
+  <!-- fieldset container -->
+  <div class="container">
+  <fieldset id="fset-container">
+
+      <form id="login-container">
+
+          <div>
+              <label for="lgin">Login:</label>
+              <input class="hvr" type="email" name="lgin" id="lgin" placeholder="  email@gmail.com" />
+              <label for="pswd">Senha:</label>
+              <input class="hvr" type="password" name="pswd" id="pswd" placeholder="  ********" />
+              <input type="checkbox" name="remember" id="lembra" class="chkbox"><span>Lembrar senha</span>
+              <button type="submit" class="btn-submit" id="lgin-btn">Login</button>
+              <button type="reset" class="btn-reset" id="logClr-btn">Limpar</button>
+          </div>
+
+      </form>
+  </fieldset>
+  </div>
+  </main>
+        <!-- Footer -->
+    <footer>
+        <p>Informações fictícias com links para alguns sites, utilizados unicamente para treinamento e desenvolvimento de Front End - Certified Tech Developer.</p>
+        <p>2021 – LocaMoto Locação de Veículos Ltda</p>
+    </footer>
+  </body>
+</html>
